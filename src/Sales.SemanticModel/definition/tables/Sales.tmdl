@@ -30,6 +30,7 @@ table Sales
 		formatString: $ #,##0
 		lineageTag: d22a262b-b776-4ccd-b9bd-7ef9c90eba51
 
+	/// test
 	measure '# Sales' = COUNTROWS('Sales')
 		formatString: #,##02
 		lineageTag: 67791bd1-5f33-4a29-a9ac-be0ad2453fcf
@@ -193,6 +194,7 @@ table Sales
 		dataType: int64
 		isHidden
 		formatString: 0
+		isAvailableInMdx: false
 		lineageTag: 3a3256d8-5094-4a3a-9109-8ce85813f62c
 		summarizeBy: sum
 		sourceColumn: Quantity
@@ -203,6 +205,7 @@ table Sales
 		dataType: decimal
 		isHidden
 		formatString: "€"#,0.###############;("€"#,0.###############);"€"#,0.###############
+		isAvailableInMdx: false
 		lineageTag: a190bb72-9254-4740-b536-2c016eef5c07
 		summarizeBy: sum
 		sourceColumn: Net Price

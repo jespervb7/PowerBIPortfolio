@@ -41,6 +41,7 @@ table Calendar
 		dataType: dateTime
 		isHidden
 		formatString: Long Date
+		isAvailableInMdx: false
 		lineageTag: c7ef3a60-e14b-4548-aaaa-fbeb247346f4
 		summarizeBy: none
 		sourceColumn: Date
@@ -101,6 +102,7 @@ table Calendar
 		dataType: boolean
 		isHidden
 		formatString: """TRUE"";""TRUE"";""FALSE"""
+		isAvailableInMdx: false
 		lineageTag: ba6865ae-6e84-400d-8dda-5f8e8e62867f
 		summarizeBy: none
 		sourceColumn: Is Weekend
@@ -111,6 +113,7 @@ table Calendar
 		dataType: int64
 		isHidden
 		formatString: 0
+		isAvailableInMdx: false
 		lineageTag: 5689ae25-2b3b-4051-8540-36656934f3a5
 		summarizeBy: none
 		sourceColumn: Fiscal Year
@@ -198,4 +201,6 @@ table Calendar
 	annotation PBI_ResultType = Table
 
 	annotation PBI_NavigationStepName = Navigation
+
+	annotation BestPracticeAnalyzer_IgnoreRules = {"RuleIDs":["DATE/CALENDAR_TABLES_SHOULD_BE_MARKED_AS_A_DATE_TABLE"]}
 

@@ -4,6 +4,7 @@ table About
 	column Key
 		dataType: string
 		isHidden
+		isAvailableInMdx: false
 		lineageTag: 64fdcf75-33e0-4134-a5b8-677f8fefa7ed
 		summarizeBy: none
 		sourceColumn: Key
@@ -22,6 +23,7 @@ table About
 		dataType: int64
 		isHidden
 		formatString: 0
+		isAvailableInMdx: false
 		lineageTag: 93bae8d8-9794-480e-8753-d51693dfa9ad
 		summarizeBy: none
 		sourceColumn: Order
